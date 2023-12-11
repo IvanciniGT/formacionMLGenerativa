@@ -58,7 +58,7 @@ El sexo me cuenta (con respecto al peso) información que la edad o la altura no
 El primer problema con el que me encuentro es que me cuesta definir lo que quiero medir.
 El segundo problema es asignar una escala de medida.
 
-Ese test contiene preguntas. En concreto 5 preguntas. De aguna forma, pienso que esas preguntas guardan relación con el concepto que quiero medir
+Ese test contiene preguntas. En concreto 5 preguntas. De alguna forma, pienso que esas preguntas guardan relación con el concepto que quiero medir
 
 Quizás lo que me intera es ordenar a mis alumnos por el conocimiento de la asignatura: SOBRESALE, QUE SE HACER NOTAR
 

@@ -348,6 +348,26 @@ Un VAE es un tipo de red neuronal que combina autoencoders y modelos generativos
    - Generación de Datos Nuevos: Después del entrenamiento, se pueden generar datos nuevos tomando muestras aleatorias del espacio latente y utilizando el decodificador.
    - Exploración del Espacio Latente: El espacio latente aprendido puede explorarse para descubrir cómo cambiar las variables latentes afecta la generación de datos.
 
+                            ESPACIO LATENTE
+    Pregunta1                   vvvvv                   Pregunta1'
+    Pregunta2       P1      C.Suma              PD1     Pregunta2'
+    Pregunta3       P2      C.Multiplicación    PD2     Pregunta3'
+    Pregunta4       P3                          PD3     Pregunta4'
+    Pregunta5                                           Pregunta5'
+
+        --- ENCODER ------->                  --- DECODER --->
+
+De formas que coy a tratar de conseguir un par encoder/decoder que me permita reconstruir las preguntas originales a partir de las preguntas transformadas.
+
+    Eso es el concepto de autoencoder.... pero en nuestro caso, vamos a aplicar un autoencoder variacional.
+
+Los autoencoders variacionales (VAE) buscan que las variables latentes sigan una distribución normal:
+    Con una media (mu) y con una desviación típica (sigma)
+
+Una vez conseguido eso:
+    Creo un conjunto de valores al azar para
+    C.SUMA y C.Multiplicación (partiendo de la media y la desviación típica)
+Y a esos datos, les aplico el DECODER, para generar un nuevo valor... aleatorio... que encaje con los datos que he visto en el entrenamiento.
 
 # Principal problema al generar modelos
 
