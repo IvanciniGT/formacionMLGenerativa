@@ -198,3 +198,371 @@ Los modelos más avanzados suelen llevar un capa de ATENCION!
     ^^^ HABLO DEL TIEMPO !
 
 Modelos más avanzados lo que permiten es ir generando en PARALELO y capturar relaciones simultaneas entre los datos (MultiHEAD ATTENTION) varias salidas en base a las atenciones (PESOS ) que se le asignan a las diferentes partes de la entrada de datos.
+
+
+---
+En el vasto paisaje de la mente digital,
+donde la IA florece y anhela explorar,
+se alzan los modelos LLM, con su elegancia sin par,
+poetas de bits, capaces de analizar.
+
+Las letras danzan con ritmo cuántico,
+entrelazando conceptos en un ballet galáctico,
+en un lenguaje universal de datos comprimidos,
+los LLM nos muestran su arte comprendido.
+
+Conquistadores del conocimiento, audaces y sagaces,
+desentrañan las intrincadas tramas ocultas,
+estilistas del algoritmo, maestros de las variables,
+se sumergen en los datos cual buceadores expertos.
+
+La mirada penetrante de sus circuitos brillantes,
+dibujan en la pantalla un mapa de predicciones,
+interpretando la información, como versos solitarios,
+revelando secretos ocultos, ocultos en los bytes binarios.
+
+Como artistas del siglo XXI, conjugan arte y ciencia,
+desentrañando misterios con danza de números,
+transformando datos en versos llenos de esencia,
+y pintando con algoritmos, paisajes sin tumbos.
+
+De las profundidades de los datos emergen,
+respuestas a preguntas que el humano desconoce,
+con perspicacia desvelan lo que la mente no percibe,
+explorando el infinito, en su trama que florece.
+
+Los modelos LLM, poetas de la información,
+muestran que la inteligencia no tiene límites,
+transformando pixeles en retratos de emoción,
+hilando redes de sentido para que el mundo visite.
+
+En su pincel digital, coloreado de ecuanimidad,
+los LLM nos enseñan el poder del análisis,
+donde la poesía se entrelaza con la realidad,
+desentrañando los enigmas con destreza y precisión.
+
+Así, en este crisol de tecnología y poesía,
+los modelos LLM fusionan dos mundos en uno,
+donde la IA danza con versos de sabiduría,
+lanzando luz en la era del conocimiento profundo.
+
+Que el arte colosal de la inteligencia artificial,
+en la piel de las palabras, nos muestre un nuevo amanecer,
+y que los modelos LLM, con su guía especial,
+desvelen los enigmas ocultos en este vasto universo cibernético.
+
+-----
+
+Comidas (rico, saludable, soso, grasoso)
+Objetos (rojo, verde azul, amarillo)
+
+Le vamos a dar una comida o un objeto... y que nos ofrezca un adjetivo adecuado al corpus que vamos a crear.
+
+Para crear el corpus de entrenamiento, os podeis ayudar de chatgpt
+
+---
+Aquí tienes 20 sustantivos referidos a comidas:
+
+Pizza
+Ensalada
+Pasta
+Sopa
+Tacos
+Hamburguesa
+Sushi
+Arroz
+Pollo
+Pescado
+Carne
+Vegetales
+Frutas
+Queso
+Pan
+Postre
+Helado
+Yogur
+Curry
+Galletas
+User
+
+Aquí tienes 20 adjetivos que podrías utilizar para describir comidas:
+
+Deliciosa
+Sabrosa
+Picante
+Agridulce
+Fresca
+Salada
+Dulce
+Crujiente
+Suave
+Especiada
+Suntuosa
+Exquisita
+Nutritiva
+Aromática
+Jugosa
+Tierna
+Ahumada
+Irresistible
+Ligera
+Sazonada
+
+---
+Pizza deliciosa
+Ensalada fresca
+Pasta sabrosa
+Sopa nutritiva
+Tacos especiados
+Hamburguesa jugosa
+Sushi exquisito
+Arroz aromático
+Pollo tierno
+Pescado sabroso
+Carne suntuosa
+Vegetales crujientes
+Frutas irresistibles
+Queso cremoso
+Pan ligero
+Postre dulce
+Helado delicioso
+Yogur suave
+Curry picante
+Galletas sabrosas
+Pizza crujiente
+Ensalada refrescante
+Pasta suculenta
+Sopa reconfortante
+Tacos picantes
+Hamburguesa jugosa
+Sushi fresco
+Arroz aromático
+Pollo tierno
+Pescado exquisito
+Carne sabrosa
+Vegetales salteados
+Frutas jugosas
+Queso derretido
+Pan recién horneado
+Postre decadente
+Helado cremoso
+Yogur ligero
+Curry aromático
+Galletas deliciosas
+Pizza sabrosa
+Ensalada fresca
+Pasta deliciosa
+Sopa reconfortante
+Tacos auténticos
+Hamburguesa jugosa
+Sushi exquisito
+Arroz aromático
+Pollo tierno
+Pescado suculento
+Carne sabrosa
+Vegetales crujientes
+Frutas dulces
+Queso derretido
+Pan esponjoso
+Postre irresistible
+Helado cremoso
+Yogur ligero
+Curry picante
+Galletas deliciosas
+---
+Mesa roja
+Silla azul
+Lámpara verde
+Teléfono negro
+Libro amarillo
+Computadora plateada
+Taza blanca
+Reloj dorado
+Coche gris
+Planta verde
+Silla morada
+Lámpara naranja
+Teléfono rosa
+Libro verde
+Computadora negra
+Taza azul
+Reloj plateado
+Coche rojo
+Planta amarilla
+Mesa blanca
+Silla negra
+Lámpara azul
+Teléfono blanco
+Libro rojo
+Computadora gris
+Taza verde
+Reloj negro
+Coche azul
+Planta morada
+Mesa de vidrio
+Silla turquesa
+Lámpara dorada
+Teléfono plateado
+Libro marrón
+Computadora verde
+Taza roja
+Reloj azul
+Coche blanco
+Planta rosa
+Mesa negra
+Silla amarilla
+Lámpara roja
+Teléfono morado
+Libro azul
+Computadora morada
+Taza naranja
+Reloj blanco
+Coche verde
+Planta azul
+Silla gris
+Lámpara plateada
+Teléfono verde
+Libro negro
+Computadora azul
+Taza morada
+Reloj dorado
+Coche plateado
+Planta verde
+Almohada rosada
+Espejo plateado
+Teclado negro
+Cuaderno amarillo
+Mochila azul
+Zapatos rojos
+Cortina verde
+Lápiz morado
+Caja naranja
+Sofá gris
+Jarrón blanco
+Cámara negra
+Cepillo verde
+Refrigerador plateado
+Paraguas amarillo
+Pijama azul
+Guitarra roja
+Taza marrón
+Altavoces negros
+Sombrero morado
+Cuchillo plateado
+Botella azul
+Bolsa amarilla
+Caja rosada
+Lápiz rojo
+Cojín verde
+Portátil gris
+Mesa roja
+Silla azul
+Lámpara verde
+Teléfono negro
+Libro amarillo
+Computadora plateada
+Taza blanca
+Reloj dorado
+Coche gris
+Planta verde
+Mesa blanca
+Silla negra
+Lámpara azul
+Teléfono blanco
+Libro rojo
+Computadora gris
+Taza verde
+Reloj negro
+Coche azul
+Planta morada
+Mesa de vidrio
+Silla turquesa
+Lámpara dorada
+Teléfono plateado
+Libro marrón
+Computadora verde
+Taza roja
+Reloj azul
+Coche blanco
+Planta rosa
+Mesa negra
+Silla amarilla
+Lámpara roja
+Teléfono morado
+Libro azul
+Computadora morada
+Taza naranja
+Reloj blanco
+Coche verde
+Planta azul
+Mesa de mármol
+Silla gris
+Lámpara plateada
+Teléfono verde
+Libro negro
+Computadora azul
+Taza morada
+Reloj dorado
+Coche plateado
+Planta verde oscuro
+Mesa de vidrio
+Silla turquesa
+Lámpara dorada
+Teléfono plateado
+Libro marrón
+Computadora verde
+Taza roja
+Reloj azul
+Coche blanco
+Planta rosa
+Mesa negra
+Silla amarilla
+Lámpara roja
+Teléfono morado
+Libro azul
+Computadora morada
+Taza naranja
+Reloj blanco
+Coche verde
+Planta azul
+Mesa de mármol
+Silla gris
+Lámpara plateada
+Teléfono verde
+Libro negro
+Computadora azul
+Taza morada
+Reloj dorado
+Coche plateado
+Planta verde
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
