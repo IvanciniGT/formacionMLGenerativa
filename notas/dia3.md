@@ -495,7 +495,6 @@ Taza naranja
 Reloj blanco
 Coche verde
 Planta azul
-Mesa de mármol
 Silla gris
 Lámpara plateada
 Teléfono verde
@@ -504,8 +503,7 @@ Computadora azul
 Taza morada
 Reloj dorado
 Coche plateado
-Planta verde oscuro
-Mesa de vidrio
+Planta verde
 Silla turquesa
 Lámpara dorada
 Teléfono plateado
