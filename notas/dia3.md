@@ -343,7 +343,6 @@ Carne sabrosa
 Vegetales salteados
 Frutas jugosas
 Queso derretido
-Pan recién horneado
 Postre decadente
 Helado cremoso
 Yogur ligero
