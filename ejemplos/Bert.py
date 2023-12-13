@@ -62,7 +62,7 @@ optimizer = AdamW(model.parameters(), lr=5e-5)
 
 # Entrenamiento
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-if(torch.bachends.mps.is_available()) :
+if(torch.backends.mps.is_available()) :
     device = torch.device('mps')
 # Hay un monton de devices disponibles en ttorch, por ejemplo
 # para mac: mps: Multi-Processing Service
@@ -79,7 +79,7 @@ model.to(device) # Nuestro modelo va a usar el motor de calculo del dispositivo 
 # Al final, o alquilo una máquina en un cloud, con una GPU (NVidia), en Google si alquilo una máquina puedo usar TPU
 # O tengo una máquina monstruosa en la empresa que la dedico a estos menesteres.
 
-for epoch in range(3):  # Número de épocas
+for epoch in range(15):  # Número de épocas
     model.train()
     for input_ids, attention_mask, start_positions, end_positions in data_loader:
         input_ids = input_ids.to(device).squeeze(1) # Movemos los datos de la memoria RAM a la memoria del dispositivo concreto que vamos a usar
@@ -97,6 +97,25 @@ for epoch in range(3):  # Número de épocas
         optimizer.step()    # Y actualizo los pesos
 
     print(f"Epoch {epoch} completed")
+
+# Directorio donde quieres guardar el modelo y el tokenizador
+output_dir = "./mi_modelo_bert_afinado"
+
+# Crear el directorio si no existe
+import os
+if not os.path.exists(output_dir):
+    os.makedirs(output_dir)
+
+# Guardar el modelo y el tokenizador usando `save_pretrained()`
+model.save_pretrained(output_dir)
+tokenizer.save_pretrained(output_dir)
+
+print(f"Modelo guardado en {output_dir}")
+
+
+# Cargar el modelo y el tokenizador
+model = BertForQuestionAnswering.from_pretrained(output_dir)
+tokenizer = BertTokenizer.from_pretrained(output_dir)
 
 # Poner el modelo en modo de evaluación
 model.eval()
@@ -130,6 +149,6 @@ def answer_question(question, context):
 
 # Ejemplo de uso
 context = "España es un país en la península ibérica. Su capital es Madrid."
-question = "Capital de España"
+question = "capital de España?"
 
 print(answer_question(question, context))

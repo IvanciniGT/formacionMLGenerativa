@@ -141,3 +141,18 @@ AQUÍ ES DONDE TENGO UN GRAN RESULTADO CON SPARK y MLlib.... teniendo en cuenta 
 
 Como tenga que mover datos entre nodos... apaga y vamonos... Tengo 800 máquinas y las tengo aburridas, esperando  a que los datose vayan llegando o saliendo por la red.
 
+---
+
+# DEV-->OPS
+
+Es  una cultura, un movimiento, una filosofía (NO ES un perfil profesional, no es una metodología)
+en pro de LA AUTOMATIZACION de todo lo que hay entre DEV -> OPS
+
+
+Es una evolución d lo que antes llamábamos SDMC
+
+Una cosa es un proyecto de software... que antiguamente un proyecto lo gestionábamos mediante una metodología en cascada. Versión 1 de un programa que me han pedido.
+
+Luego tendré una segunda versión... Sacaba un nuevo proyecto... que también gestionaba mediante una metodología en cascada.
+
+Al mirar el ciclo de vida del software (la acumulación de esos proyectos) ---> SDMC
