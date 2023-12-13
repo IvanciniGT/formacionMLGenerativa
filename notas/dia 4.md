@@ -189,3 +189,25 @@ A la hora de generar modelos, hablamos de 2 tipos de entrenamientos:
 Por dentro la red neuronal de BERT tiene muchas capas... una de ellas es la de embedding... que es la que se encarga de convertir las palabras en números (vectores) para que la red neuronal pueda trabajar con ellos.... y a partir de ahi se van reduciendo las dimensiones de esos vectores hasta que llegamos a la capa de salida que es la que nos dice a qué categoría pertenece ese texto.
 
 Puedo tomar los resultados de esas capas intermedias de la red neuronal y usarlos para alimentar otro modelo que nos ayude a hacer una clasificación no supervisada: K-Means, DBSCAN, etc.
+
+---
+
+# IA Generativas / LLM
+
+IAs generativas me generan nuevo contenido original
+
+LLM me permiten entender el lenguaje natural o generar lenguaje natural
+
+PLN: Procesamiento de Lenguaje Natural
+
+En nuestro caso, hoy hemos estado usando BERT que es un modelo de lenguaje de gran tamaño (LLM) especializado en PLN:
+- Analizar el lenguaje natural / Análisis de textos
+- Extracción de características de textos
+- Clasificación de textos
+- Identificar respuestas dentro de un contexto
+En este sentido es diferente de un modelo como GPT-3 que es un modelo de IA generativa.
+
+HAY QUE TENER MUCHO CUIDADO con los modelos generadores de contenido: GPT... se inventan una cantidad de patrañas gigantescas!
+
+
+Bert mira el texto de delante hacía atrás también... fué innovador en su momento
