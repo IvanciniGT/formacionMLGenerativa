@@ -156,3 +156,36 @@ Una cosa es un proyecto de software... que antiguamente un proyecto lo gestioná
 Luego tendré una segunda versión... Sacaba un nuevo proyecto... que también gestionaba mediante una metodología en cascada.
 
 Al mirar el ciclo de vida del software (la acumulación de esos proyectos) ---> SDMC
+
+---
+
+A la hora de generar modelos, hablamos de 2 tipos de entrenamientos:
+- Supervisado: 
+  - Le doy un conjunto de datos de entrada
+  - Un conjunto de datos de salida
+  - Y le digo: "Aprende a generar esas salidas, a partir de esas entradas"
+
+    BERT -> Modelo de lenguaje de gran tamaño (LLM) para clasificar textos -> Supervisado
+        De partida:
+            Texto 1     ---> Categoría 1
+            Texto 2     ---> Categoría 2
+            Texto 3     ---> Categoría 1
+
+            Texto 4     ---> Predicción: Categoría 1
+
+            BertForSecuenceClassification
+
+
+- No supervisado
+  - Le doy un conjunto de datos de entrada
+  - Y le digo: "Aprende a generar alguna salida, a partir de esas entradas"
+  - Qué salida? NPI
+
+    Tengo 500.000 preguntas que me han ido haciendo a lo largo de un par de años mis clientes...
+    Me las agrupas? Pero no te voy a decir cómo... Lo que tu veas!
+
+    Suele ser un paso previo a la creación de un modelo predictivo / generativo
+
+Por dentro la red neuronal de BERT tiene muchas capas... una de ellas es la de embedding... que es la que se encarga de convertir las palabras en números (vectores) para que la red neuronal pueda trabajar con ellos.... y a partir de ahi se van reduciendo las dimensiones de esos vectores hasta que llegamos a la capa de salida que es la que nos dice a qué categoría pertenece ese texto.
+
+Puedo tomar los resultados de esas capas intermedias de la red neuronal y usarlos para alimentar otro modelo que nos ayude a hacer una clasificación no supervisada: K-Means, DBSCAN, etc.
