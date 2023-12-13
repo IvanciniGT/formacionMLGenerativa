@@ -1,0 +1,67 @@
+[
+    {
+        "question": "¿Dónde nació Miguel de Cervantes?",
+        "context": "Miguel de Cervantes Saavedra, novelista, poeta y dramaturgo español, nació el 29 de septiembre de 1547 en Alcalá de Henares.",
+        "answer": "Alcalá de Henares"
+    },
+    {
+        "question": "¿Cuál es el río más largo del mundo?",
+        "context": "El río Amazonas es el más largo del mundo. Fluye a través de Brasil, Perú, y otros países sudamericanos.",
+        "answer": "Amazonas"
+    },
+    {
+        "question": "¿Quién pintó la Capilla Sixtina?",
+        "context": "La Capilla Sixtina, famosa por su arquitectura y su decoración, que incluye frescos como 'El Juicio Final', fue pintada por Miguel Ángel.",
+        "answer": "Miguel Ángel"
+    },
+    {
+        "question": "¿Qué es la fotosíntesis?",
+        "context": "La fotosíntesis es un proceso que utilizan las plantas y otros organismos para convertir la luz del sol en energía química. Este proceso es fundamental para la vida en la Tierra.",
+        "answer": "proceso que utilizan las plantas y otros organismos para convertir la luz del sol en energía química"
+    },
+    {
+        "question": "¿Dónde se encuentra la Gran Muralla China?",
+        "context": "La Gran Muralla China es una antigua fortificación china, construida para proteger las fronteras del Imperio chino durante varias dinastías.",
+        "answer": "China"
+    },
+        {
+        "question": "¿Cuál es la capital de Alemania?",
+        "context": "Berlín es la capital de Alemania y una de las ciudades más influyentes en el ámbito político y cultural europeo.",
+        "answer": "Berlín"
+    },
+    {
+        "question": "¿Quién escribió Cien años de soledad?",
+        "context": "Cien años de soledad es una novela del escritor colombiano Gabriel García Márquez, publicada por primera vez en 1967.",
+        "answer": "Gabriel García Márquez"
+    },
+    {
+        "question": "¿Qué es el ADN?",
+        "context": "El ácido desoxirribonucleico, más conocido como ADN, es un ácido nucleico que contiene las instrucciones genéticas usadas en el desarrollo y funcionamiento de todos los organismos vivos conocidos y algunos virus.",
+        "answer": "ácido desoxirribonucleico"
+    },
+    {
+        "question": "¿Dónde se originaron los Juegos Olímpicos?",
+        "context": "Los Juegos Olímpicos se originaron en la antigua Grecia, específicamente en la ciudad de Olimpia, y se celebraban cada cuatro años en honor a Zeus.",
+        "answer": "antigua Grecia"
+    },
+    {
+        "question": "¿Quién es conocido como el padre de la física moderna?",
+        "context": "Albert Einstein, un físico nacido en Alemania, es ampliamente conocido como el padre de la física moderna debido a su desarrollo de la teoría de la relatividad.",
+        "answer": "Albert Einstein"
+    },
+    {
+        "question": "¿Cuál es el libro sagrado del Islam?",
+        "context": "El Corán es el libro sagrado del Islam, que los musulmanes consideran la palabra de Dios revelada a Mahoma, quien es el último profeta del Islam.",
+        "answer": "El Corán"
+    },
+    {
+        "question": "¿Qué es la Mona Lisa?",
+        "context": "La Mona Lisa es una famosa pintura del artista renacentista Leonardo da Vinci. Actualmente, se encuentra expuesta en el Museo del Louvre en París.",
+        "answer": "una famosa pintura del artista renacentista Leonardo da Vinci"
+    },
+    {
+        "question": "¿Cuál es el río más largo de África?",
+        "context": "El río Nilo, considerado el río más largo de África, fluye a través de once países y desemboca en el mar Mediterráneo.",
+        "answer": "El río Nilo"
+    }
+]

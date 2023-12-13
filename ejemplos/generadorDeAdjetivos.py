@@ -7,7 +7,6 @@ fichero = open("corpus.txt", "r")
 corpus = fichero.read()
 print("Corpus:", corpus)
 
-
 # Preprocesamiento del texto
 tokens = set(corpus.split())
 word_to_idx = {word: idx for idx, word in enumerate(tokens)}
@@ -52,20 +51,21 @@ class TextGenerator(nn.Module):
         return output
 
 
+# Configuración de hiperparámetros actualizada
+embedding_dim = 100
+hidden_size = 200
+learning_rate = 0.01
+num_epochs = 500
+num_layers = 2  # Son las cpas de memoria que conectamos : LSTM
+dropout_rate = 0.3  # Ajusta según sea necesario
+
 generar_modelo = True
+# Inicializar el modelo
+model = TextGenerator(num_tokens, embedding_dim, hidden_size, num_layers, dropout_rate)
 
-if(generar_modelo):
-    # Configuración de hiperparámetros actualizada
-    embedding_dim = 200
-    hidden_size = 200
-    learning_rate = 0.01
-    num_epochs = 500
-    num_layers = 2  # Son las cpas de memoria que conectamos : LSTM
-    dropout_rate = 0.3  # Ajusta según sea necesario
+if generar_modelo:
 
-
-    # Inicializar el modelo, la función de pérdida y el optimizador
-    model = TextGenerator(num_tokens, embedding_dim, hidden_size, num_layers, dropout_rate)
+    # Inicializar la función de pérdida y el optimizador
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(model.parameters(), lr=learning_rate)
 
@@ -78,15 +78,14 @@ if(generar_modelo):
         optimizer.step()
 
         if (epoch + 1) % 10 == 0:
-            print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {loss.item():.4f}')
-
+            print(f'Epoch [{epoch + 1}/{num_epochs}], Loss: {loss.item():.4f}')
 
     # Guardar el modelo
-    torch.save(model, "model.pth")
+    torch.save(model.state_dict(), "model.pth")
 else:
     # Cargar el modelo preentrenado
-    model = torch.load("model.pth")
-
+    model.load_state_dict(torch.load("model.pth"))
+    model.eval()
 
 
 # seed_text Es el texto del que partimos a la hora de generar un nuevo texto
